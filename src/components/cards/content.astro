@@ -1,0 +1,19 @@
+---
+const { icon, header, content } = Astro.props
+
+interface Props {
+  icon: string
+  header: string
+  content: string
+}
+---
+
+<div class='card content'>
+  <div class='heading'>
+    <div class='icon'>
+      <img src={icon} alt='' />
+    </div>
+    <div class='card__header'>{header}</div>
+  </div>
+  <div class='card__content'>{content}</div>
+</div>

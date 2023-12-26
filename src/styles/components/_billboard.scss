@@ -1,0 +1,10 @@
+@use '../variables/index' as *;
+.billboard {
+  background: url('/bg.svg') no-repeat center center;
+  background-size: cover;
+  height: calc(100vh - $header-main);
+
+  .display-text {
+    color: white;
+  }
+}

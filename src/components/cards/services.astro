@@ -1,0 +1,22 @@
+---
+const { icon, header, content, url } = Astro.props
+
+interface Props {
+  icon: string
+  header: string
+  content: string
+  url: string
+}
+---
+
+<div class='card services'>
+  <div class='heading'>
+    <div class='icon'>
+      <img src={icon} alt='' />
+    </div>
+    <div class='card__header'>{header}</div>
+  </div>
+  <div class='card__content'>{content}</div>
+  <a href={url}>Read more...</a>
+  <!-- <div class='card__btn'>{url}</div> -->
+</div>
