@@ -16,7 +16,11 @@ interface Props {
     </div>
     <div class='card__header'>{header}</div>
   </div>
-  <div class='card__content'>{content}</div>
-  <a href={url}>Read more...</a>
+  <div class='card__content'>
+    <p>
+      {content}
+    </p>
+  </div>
+  <a class='card__button' href={url}>Read more...</a>
   <!-- <div class='card__btn'>{url}</div> -->
 </div>

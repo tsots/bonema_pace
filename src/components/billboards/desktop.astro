@@ -1,0 +1,33 @@
+---
+const { heading, text, image, className } = Astro.props
+
+export interface Props {
+  heading: string
+  text: string
+  image?: string
+  className: string
+}
+---
+
+<div class=`billboard desktop ${className}`>
+  {
+    image ? (
+      <div class='container full-height'>
+        <div class='left-content'>
+          <h1 class='heading-display'>{heading}</h1>
+          <p class='billboard-text'>{text}</p>
+        </div>
+        <div class='right-content'>
+          <img src={image} alt='' />
+        </div>
+      </div>
+    ) : (
+      <div class='container'>
+        <div class='content'>
+          <h1 class='heading-display'>{heading}</h1>
+          <p class='billboard-text'>{text}</p>
+        </div>
+      </div>
+    )
+  }
+</div>

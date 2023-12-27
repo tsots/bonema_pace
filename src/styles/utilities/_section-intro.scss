@@ -1,13 +1,12 @@
 section:not(:first-of-type) {
   margin-block-start: 12rem;
   min-height: 6rem;
+}
 
-  .section-intro,
-  .section-summary {
-    max-width: 768px;
-    margin-inline: auto;
-    // margin-block-start: 5rem;
-  }
+.section-intro,
+.section-summary {
+  max-width: 768px;
+  margin-inline: auto;
 }
 
 section:nth-of-type(odd) {

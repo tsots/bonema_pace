@@ -1,5 +1,182 @@
 ---
-
+import Layout from '../../layouts/Layout.astro'
+import DesktopBillboard from '../../components/billboards/desktop.astro'
+import ContentCard from '../../components/cards/content.astro'
 ---
 
-<h1>I am the solar page</h1>
+<Layout>
+  <DesktopBillboard
+    heading='Solar Energy Systems'
+    text='Solar power solutions refer to the various technologies, systems, and products that harness sunlight to generate electricity or heat. These solutions are used for both residential and commercial applications to reduce reliance on conventional fossil fuels and mitigate environmental impacts. Solar power solutions can be categorized based on their application and technology. Here are some common categories:'
+    image='/solar-panels.svg'
+    className='solar'
+  />
+
+  <section>
+    <div class='container'>
+      <div class='section-intro'>
+        <div class='section-intro__header'>
+          <h2>Photovoltaic (PV) Solar Panels</h2>
+        </div>
+        <div class='section-intro__text'>
+          <p>
+            Photovoltaic solar panels convert sunlight directly into electricity
+            using semiconductor materials (usually silicon) that generate an
+            electric current when exposed to photons. PV panels are widely used
+            for residential, commercial, and utility-scale electricity
+            generation.
+          </p>
+        </div>
+      </div>
+
+      <div class='cards'>
+        <ContentCard
+          header='Monocrystalline Solar Panels'
+          content='Made from a single crystal structure, they offer high efficiency and a sleek appearance.'
+        />
+
+        <ContentCard
+          header='Polycrystalline Solar Panels'
+          content='Made from multiple crystals, they are cost-effective but slightly less efficient than monocrystalline panels.'
+        />
+
+        <ContentCard
+          header='Thin-Film Solar Panels'
+          content='These panels are flexible and can be integrated into various surfaces but tend to have lower efficiency compared to crystalline panels.'
+        />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class='container'>
+      <div class='section-intro'>
+        <div class='section-intro__header'>
+          <h2>Solar Thermal Systems</h2>
+        </div>
+        <div class='section-intro__text'>
+          <p>
+            Solar thermal systems use sunlight to heat a fluid or material,
+            which is then used for space heating, water heating, or electricity
+            generation.
+          </p>
+        </div>
+      </div>
+
+      <div class='cards'>
+        <ContentCard
+          header='Solar Water Heaters'
+          content='These systems heat water for domestic use or space heating.'
+        />
+
+        <ContentCard
+          header='Concentrated Solar Power (CSP)'
+          content='CSP systems concentrate sunlight onto a small area to generate high temperatures that drive a turbine for electricity generation.'
+        />
+
+        <ContentCard
+          header='Solar Cookers'
+          content='Designed for cooking food using solar energy, especially in regions with limited access to traditional cooking fuels.'
+        />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class='container'>
+      <div class='section-intro'>
+        <div class='section-intro__header'>
+          <h2>Solar Farms and Power Plants</h2>
+        </div>
+        <div class='section-intro__text'>
+          <p>
+            Large-scale solar installations designed to generate electricity
+            that is fed into the grid for widespread distribution.
+          </p>
+        </div>
+      </div>
+
+      <div class='cards'>
+        <ContentCard
+          header='Utility-Scale Solar Farms'
+          content='Large solar arrays typically located in sunny regions to generate significant electricity.'
+        />
+
+        <ContentCard
+          header='Floating Solar Farms'
+          content='Solar panels installed on bodies of water, such as reservoirs or ponds'
+        />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class='container'>
+      <div class='section-intro'>
+        <div class='section-intro__header'>
+          <h2>Off-Grid Solar Systems</h2>
+        </div>
+        <div class='section-intro__text'>
+          <p>
+            These systems are not connected to the main electrical grid and are
+            often used in remote areas or for backup power.
+          </p>
+        </div>
+      </div>
+
+      <div class='cards'>
+        <ContentCard
+          header='Off-Grid Solar Power Systems'
+          content="Generate and store electricity using batteries for use when the sun isn't shining."
+        />
+
+        <ContentCard
+          header='Solar-Powered Water Pumps'
+          content='Used for irrigation and water supply in remote areas.'
+        />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class='container'>
+      <div class='section-intro'>
+        <div class='section-intro__header'>
+          <h2>Solar-Powered Consumer Products</h2>
+        </div>
+        <div class='section-intro__text'>
+          <p>Small-scale solar solutions for everyday use.</p>
+        </div>
+      </div>
+
+      <div class='cards'>
+        <ContentCard
+          header='Solar Chargers'
+          content='Charge portable devices like phones, tablets, and laptops.'
+        />
+
+        <ContentCard
+          header='Solar-Powered Lights'
+          content='Outdoor lighting solutions that charge during the day and provide light at night.'
+        />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class='container'>
+      <div class='section-intro'>
+        <div class='section-intro__header'>
+          <h2>Building-Integrated Photovoltaics (BIPV)</h2>
+        </div>
+        <div class='section-intro__text'>
+          <p>
+            Integrating solar panels into building materials like roofs,
+            windows, and facades to generate power while serving architectural
+            functions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

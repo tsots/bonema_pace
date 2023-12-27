@@ -1,0 +1,93 @@
+---
+import DesktopBillboard from '../components/billboards/desktop.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout>
+  <DesktopBillboard
+    heading='About Us'
+    text="Bonema Engineering is a trailblazing renewable energy company that places sustainability and quality at the forefront of its operations. With a strong commitment to delivering reliable and affordable electricity to communities, Bonema engineering's integrated management system, experienced leadership, and industry expertise position it as a leader in the renewable energy sector in South Africa and Botswana."
+    className='about'
+  />
+
+  <section class='who-we-are'>
+    <div class='container'>
+      <div class='section-intro'>
+        <h2 class='section-intro__header'>Who are we</h2>
+        <p class='section-intro__text'>
+          Bonema Engineering is a renowned renewable energy company with a
+          robust integrated management system that enables its operations on a
+          global scale. Founded in March 2015, the company specializes in
+          utilities management, focusing on the generation, distribution, and
+          provision of sustainable and affordable electricity solutions. Bonema
+          Engineering prioritizes viability and sustainability, aiming to
+          provide top-quality energy resources and services to communities in
+          South Africa and Botswana.
+        </p>
+      </div>
+    </div>
+
+    <div class='full-width about'>
+      <div class='left-content'>
+        <h2 class='section-intro-leadership__title'>Leadership Team</h2><p
+          class='section-intro-leadership__text'
+        >
+          Bokang Mosala<small class='designation'>(Managing Director)</small>
+        </p><p class='section-intro-leadership__text'>
+          Maemili Ramataboe<small class='designation'>(Finance Director)</small>
+        </p><p class='section-intro-leadership__text'>
+          Rebaone Kgobokoe<small class='designation'>(Head of Legal)</small>
+        </p>
+      </div>
+
+      <div class='right-content'>
+        <img src='/image-about-intro.jpg' alt='' />
+      </div>
+    </div>
+  </section>
+
+  <section class='full-width teasers'>
+    <div class='teaser'>
+      <div class='left-content'>
+        <img src='/image-sustainability-sm.jpg' alt='' />
+      </div>
+      <div class='right-content'>
+        <h2>Sustainability Focus</h2>
+        <p>
+          Bonema Engineering’s core principle is to prioritize sustainability in
+          every aspect of its operations, from resource identification to
+          electricity distribution, ensuring long-term benefits for communities.
+        </p>
+      </div>
+    </div>
+
+    <div class='teaser'>
+      <div class='left-content'>
+        <h2>Community Impact</h2>
+        <p>
+          Bonema Engineering recognizes the potential negative effects of
+          unsustainable projects on communities, and therefore, their commitment
+          to sustainability translates into positive economic and social
+          impacts.
+        </p>
+      </div>
+      <div class='right-content'>
+        <img src='/image-impact-sm.jpg' alt='' />
+      </div>
+    </div>
+
+    <div class='teaser'>
+      <div class='left-content'>
+        <img src='/image-quality-assurance-sm.jpg' alt='' />
+      </div>
+      <div class='right-content'>
+        <h2>Quality Assurance</h2>
+        <p>
+          The company places a strong emphasis on providing top-quality products
+          and services, comparable to those found in developed countries,
+          ensuring reliability and uninterrupted energy supply.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

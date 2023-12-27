@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro'
+import DesktopBillboard from '../components/billboards/desktop.astro'
+import ServiceCard from '../components/cards/services.astro'
+---
+
+<Layout>
+  <DesktopBillboard
+    heading='Services and Solutions'
+    text='Bonema Engineering offers a comprehensive range of renewable energy solutions to industrial, commercial, and residential clients. The company’s diverse portfolio includes solar power, inverters, windmills, and hydropower systems. Bonema Engineering specializes in:'
+    className='services'
+  />
+
+  <div class='cards container'>
+    <ServiceCard
+      icon='/icon/solar-icon.svg'
+      header='Solar Power Solutions'
+      content='Embrace the power of the sun with our customized solar solutions that cater to residential, commercial, and industrial needs.'
+      url='/services/solar-energy'
+    />
+
+    <ServiceCard
+      icon='/icon/turbine-icon.svg'
+      header='Wind Energy Systems'
+      content="Tap into the wind's potential to generate clean and reliable energy, contributing to a cleaner and more sustainable future."
+      url='/services/wind-energy'
+    />
+
+    <ServiceCard
+      icon='/icon/battery-icon.svg'
+      header='Energy Storage'
+      content='Store excess energy efficiently and intelligently, ensuring a seamless power supply even during peak demand periods.'
+      url='/services/storage'
+    />
+
+    <ServiceCard
+      icon='/icon/hydro-icon.svg'
+      header='Hydro Energy Systems'
+      content='Store excess energy efficiently and intelligently, ensuring a seamless power supply even during peak demand periods.'
+      url='/services/hydro-energy'
+    />
+
+    <ServiceCard
+      icon='/icon/mesh-icon.svg'
+      header='Wire-Mesh Services'
+      content='Store excess energy efficiently and intelligently, ensuring a seamless power supply even during peak demand periods.'
+      url='/services/wire-mesh'
+    />
+
+    <ServiceCard
+      icon='/icon/utilities-icon.svg'
+      header='Utilities Management'
+      content='We are Your Trusted Partner in Meshing Success. Explore Our Wire Mesh Solutions Today!'
+      url='/services/utilities-management'
+    />
+  </div>
+</Layout>

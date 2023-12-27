@@ -1,0 +1,268 @@
+---
+import Layout from '../layouts/Layout.astro'
+import DesktopBillboard from '../components/billboards/desktop.astro'
+---
+
+<Layout>
+  <DesktopBillboard
+    heading='Contact us'
+    text="Feel free to reach out to us for personalized assistance and expert guidance – we're here to turn your inquiries into solutions."
+    className='contact'
+  />
+  <div class='container contact-Us'>
+    <div class='left-content'>
+      <ul class='address'>
+        <h3>Head Office Address</h3>
+        <li>Growthpoint Business Park</li>
+        <li>Unit 4</li>
+        <li>162 Tonetti Street</li>
+        <li>Halfway House, Midrand</li>
+        <li>South Africa 1685</li>
+      </ul>
+
+      <ul class='contacts'>
+        <h3>Contact Numbers</h3>
+        <li>Tel: +27 12 772 9729</li>
+        <li>Accounts : 086 126 6362</li>
+        <li>Sales & Support: +27 12 772 9729</li>
+        <li>
+          EMail :
+          <span>
+            <a href='mailto:info@bonema.co.za'>info@bonema.co.za</a>
+          </span>
+        </li>
+      </ul>
+
+      <div class='styles__Form-sc-18vggdz-0 bjSZcv'>
+        <h3>Contact Form</h3>
+        <form autocomplete='off'>
+          <div class='input-group'>
+            <label for='name'>Name:</label>
+            <input
+              class='no-outline'
+              type='text'
+              name='name'
+              id=''
+              placeholder='Your Name'
+            />
+          </div>
+          <div class='input-group'>
+            <label for='email'>Email Address</label>
+            <input
+              class='no-outline'
+              type='email'
+              name='email'
+              id=''
+              placeholder='Your E-Mail Address'
+            />
+          </div>
+          <div class='input-group'>
+            <label for='number'>Contact Number</label>
+            <input
+              class='no-outline'
+              type='tel'
+              name='number'
+              id=''
+              placeholder='Contact Number'
+            />
+          </div>
+          <div class='input-group'>
+            <label for='message'>Message</label>
+            <textarea
+              class='no-outline'
+              name='message'
+              id=''
+              cols='30'
+              rows='10'
+              placeholder='Your Message'></textarea>
+          </div>
+          <input type='submit' />
+        </form>
+      </div>
+    </div>
+    <div class='right-content'>
+      <div class='map'>
+        <div class='container'>
+          <div class='mapouter'>
+            <div class='gmap_canvas'>
+              <iframe
+                width='100%'
+                height='100%'
+                id='gmap_canvas'
+                src='https://maps.google.com/maps?q=162 tonetti street&t=&z=14&ie=UTF8&iwloc=&output=embed'
+                frameborder='0'
+                scrolling='no'
+                '></iframe>
+              <a href='https://2yu.co'>2yu</a>
+              <br />
+              <a href='https://embedgooglemap.2yu.co/'>
+                html embed google map</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang='scss'>
+  .container.contact-Us {
+    margin-block: 5rem 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .left-content {
+    display: grid;
+    row-gap: 5rem;
+
+    h3 {
+      margin-block-end: 0.5rem;
+    }
+    li {
+      padding-block: 0.1rem;
+    }
+  }
+  ul {
+    list-style-type: none;
+  }
+
+  .gmap_canvas {
+    height: 100%;
+  }
+
+  .map {
+    width: 100%;
+    height: 100%;
+    //   margin-top: 5vh;
+    display: grid;
+    place-items: center;
+    //   padding: 1rem 0px 3rem;
+    //   background-color: white;
+    //   box-shadow: rgb(68, 68, 68) 0px 1px 10px;
+    //   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    .container {
+      width: 100%;
+      max-width: 90rem;
+      height: 100%;
+      // max-height: 50vh;
+    }
+
+    //   @media screen and (max-height: $md-scr) {
+    //     height: 90%;
+    //     padding-bottom: 5rem !important;
+    //   }
+  }
+
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    //   border-radius: 50%;
+    border-radius: 40px;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.12),
+      0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  .container.contact-Us {
+    form {
+      max-width: 90%;
+      display: grid;
+      row-gap: 1rem;
+
+      .input-group {
+        display: grid;
+        row-gap: 0.2rem;
+      }
+
+      input {
+        border: none;
+        height: 40px;
+        line-height: 40px;
+        padding: 0.2rem 0.8rem;
+        border-radius: 7px;
+        //   margin-left: 20px;
+        box-shadow:
+          0 1px 3px rgba(0, 0, 0, 0.12),
+          0 1px 2px rgba(0, 0, 0, 0.24) inset;
+        transition: all 250ms ease-in 0s;
+        outline: none;
+      }
+
+      input[type='text'],
+      input[type='email'],
+      input[type='tel'] {
+        border: 3px solid transparent;
+      }
+
+      input:focus {
+        outline: none;
+        border: none;
+        border: 3px solid turquoise;
+      }
+
+      textarea {
+        border: none;
+        padding: 0.2rem 0.8rem;
+        border-radius: 7px;
+        box-shadow:
+          0 1px 3px rgba(0, 0, 0, 0.12),
+          0 1px 2px rgba(0, 0, 0, 0.24) inset;
+        border: 3px solid transparent;
+        outline: none;
+
+        &:focus {
+          border: 3px solid turquoise;
+        }
+      }
+
+      textarea,
+      input {
+        font-family: 'Laila', sans-serif;
+      }
+      input[type='submit' i] {
+        display: inline-block;
+        justify-self: start;
+        cursor: pointer;
+        background-color: transparent;
+        border-color: transparent;
+        border: 1px solid #025c0b;
+        padding-inline: 2rem;
+        line-height: 0px;
+        color: #025c0b;
+
+        &:hover {
+          background-color: #025c0b;
+          color: whitesmoke;
+        }
+      }
+    }
+
+    ul {
+      border-bottom: 0.3rem solid rgba(0, 0, 0, 0.03);
+      h3 {
+        padding-block: 1rem 2rem;
+        text-align: center;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.03);
+      }
+      li {
+        // display: inline-block;
+        padding-block: 0.3rem;
+      }
+
+      li:last-of-type {
+        margin-block-end: 2rem;
+      }
+    }
+  }
+</style>

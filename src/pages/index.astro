@@ -1,15 +1,18 @@
 ---
-import Layout from './layout/main.astro'
+import Layout from '../layouts/Layout.astro'
+import DesktopBillboard from '../components/billboards/desktop.astro'
 import ServiceCard from '../components/cards/services.astro'
 import ContentCard from '../components/cards/content.astro'
+import Desktop from '../components/billboards/desktop.astro'
 ---
 
 <Layout>
-  <div class='billboard'>
-    <div class='container'>
-      <div class='display-text'>How are you doing today</div>
-    </div>
-  </div>
+  <DesktopBillboard
+    heading='Bonema Engineering'
+    text="Experience the power of a cleaner, more sustainable future with Bonema Engineering. Let's collaborate to drive positive change, reduce carbon footprints, and build a brighter tomorrow for Pretoria and beyond. Contact us today to embark on a journey towards a greener, more sustainable world."
+    image='/flower.svg'
+    className='home'
+  />
 
   <section class='home-services'>
     <div class='section-intro container'>

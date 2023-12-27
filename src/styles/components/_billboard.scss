@@ -2,9 +2,112 @@
 .billboard {
   background: url('/bg.svg') no-repeat center center;
   background-size: cover;
+
+  .container.full-height {
+    height: calc(100vh - $header-main);
+  }
+
+  .content {
+    max-width: 768px;
+    // height: calc(100vh - $header-main);
+    margin-inline: auto;
+    display: grid;
+    place-content: center;
+
+    .heading-display {
+      text-align: center;
+    }
+  }
+
+  .heading-display {
+    margin-block-end: 2rem;
+    color: #ffc700;
+    // font-size: 2rem;
+    font-size: clamp(2rem, 1.2rem + 4vw, 4.5rem);
+  }
+
+  &-text {
+    color: white;
+  }
+
+  // &.desktop.home {
+  //   .container {
+  //     height: 100%;
+  //     display: grid;
+  //     // overflow: clip;
+  //     place-items: center;
+  //     grid-template-columns: repeat(12, 1fr);
+
+  //     .left-content {
+  //       grid-column: 1/7;
+  //       grid-row: 1/2;
+  //     }
+  //     .right-content {
+  //       grid-column: 5/12;
+  //       grid-row: 1/2;
+  //       height: 100%;
+  //       width: 100%;
+  //       display: grid;
+  //       // place-items: end;
+  //       justify-items: end;
+  //       align-items: center;
+
+  //       img {
+  //         object-fit: cover;
+  //       }
+  //     }
+  //   }
+  //   img {
+  //     mix-blend-mode: screen;
+  //   }
+  // }
+}
+
+.container.full-height {
   height: calc(100vh - $header-main);
 
-  .display-text {
-    color: white;
+  display: grid;
+  grid-template-columns:
+    minmax(1.6rem, 1fr)
+    minmax(0, calc(1440px / 2))
+    minmax(0, calc(1440px / 2))
+    minmax(1.6rem, 1fr);
+  // place-items: center;
+
+  .left-content {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: grid;
+    // align-items: center;
+    grid-template-rows: min-content min-content;
+    gap: 0;
+    place-content: center;
+    justify-content: start;
+
+    p {
+      max-width: 700px;
+    }
+  }
+
+  .right-content {
+    height: 100%;
+    overflow: hidden;
+    grid-column: 3/4;
+    display: grid;
+    grid-row: 1/2;
+    // justify-content: end;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.billboard.home {
+  img {
+    mix-blend-mode: screen;
   }
 }
